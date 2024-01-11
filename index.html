@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<title>Emiliano Meza - Portafolio</title>
+</head>
+<body>
+	<!-- MENU ENCABEZADO-->
+	<div class="contenedor-header">
+		<header>
+			<div class="logo">
+				<a href="#">Emiliano</a>
+			</div>
+			<nav id="nav">
+				<ul>
+					<li><a href="#inicio" onclick="seleccionador()">INICIO</a></li>
+					<li><a href="#sobremi" onclick="seleccionador()">SOBRE MI</a></li>
+					<li><a href="#skills" onclick="seleccionador()">SKILLS</a></li>
+					<li><a href="#curriculum" onclick="seleccionador()">CURRICULUM</a></li>
+					<li><a href="#portafolio" onclick="seleccionador()">PORTAFOLIO</a></li>
+					<li><a href="#contacto" onclick="seleccionador()">CONTACTO</a></li>
+				</ul>
+			</nav>
+			<div class="nav-responsive" onclick="mostrarOcultarMenu()">
+				<i class="fa-solid fa-bars"></i>
+			</div>
+		</header>
+	</div>
+
+	<!-- SECCION INICIO -->
+	<section id="inicio" class="inicio">
+			<div class="contenido-banner">
+				<div class="contenedor-img">
+					<img src="img/hero.jpg" alt="">
+				</div>
+				<h1>EMILIANO MEZA</h1>
+				<h2>Desarrollador Full Stack</h2>
+				<div class="redes">
+					<a href="#" class="facebook"><i class="fa-brands fa-facebook-f"></i></a>
+					<a href="#" class="twitter"><i class="fa-brands fa-x-twitter"></i></a>
+					<a href="#" class="skype"><i class="fa-brands fa-skype"></i></a>
+					<a href="#" class="linkedin"><i class="fa-brands fa-linkedin-in"></i></a>
+					<a href="#" class="whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
+				</div>
+			</div>
+	</section>
+
+	<!-- SECCION SOBRE MI -->
+	<section id="sobremi" class="sobremi">
+			<div class="contenido-seccion">
+				<h2>Sobre Mí</h2>
+				<p><span>Hola, soy Emiliano Meza.</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo possimus iusto libero et consequuntur, cum sapiente quas? Velit, ullam perspiciatis. Sed magni assumenda necessitatibus molestiae est, labore dolor. Blanditiis, quia.</p>
+
+				<div class="fila">
+					<!-- datos personales -->
+					<div class="col">
+						<h3>Datos Personales</h3>
+						<ul>
+							<li>
+								<strong>Nacimiento</strong>
+								09-02-2001
+							</li>
+							<li>
+								<strong>Teléfono</strong>
+								+52 (442) 661 4202
+							</li>
+							<li>
+								<strong>Email</strong>
+								emiliano.meza.ochoa@icloud.com
+							</li>
+							<li>
+								<strong>Website</strong>
+								devmeza.com
+							</li>
+							<li>
+								<strong>Dirección</strong>
+								Robles 223, México
+							</li>
+							<li>
+								<strong>Cargo</strong>
+								<span>FREELANCE</span>
+							</li>
+						</ul>
+					</div>
+
+					<!-- intereses -->
+					<div class="col">
+						<h3>Intereses</h3>
+						<div class="contenedor-intereses">
+							<div class="interes">
+								<i class="fa-solid fa-chess"></i>
+								<span>AJEDREZ</span>
+							</div>
+							<div class="interes">
+								<i class="fa-solid fa-record-vinyl"></i>
+								<span>MÚSICA</span>
+							</div>
+							<div class="interes">
+								<i class="fa-solid fa-plane"></i>
+								<span>VIAJAR</span>
+							</div>
+							<div class="interes">
+								<i class="fa-brands fa-windows"></i>
+								<span>WINDOWS</span>
+							</div>
+							<div class="interes">
+								<i class="fa-solid fa-dumbbell"></i>
+								<span>DEPORTE</span>
+							</div>
+							<div class="interes">
+								<i class="fa-solid fa-book-open"></i>
+								<span>LECTURA</span>
+							</div>
+							<div class="interes">
+								<i class="fa-solid fa-car"></i>
+								<span>AUTOS</span>
+							</div>
+							<div class="interes">
+								<i class="fa-solid fa-kitchen-set"></i>
+								<span>COCINA</span>
+							</div>
+
+						</div>
+
+					</div>
+				</div>
+				<button>
+					<strong>Descargar CV</strong> <i class="fa-solid fa-download"></i>
+					<span class="overlay"></span>
+				</button>
+			</div>
+	</section>
+	
+	<!-- SECCION SKILLS -->
+	<section class="skills" id="skills">
+		<div class="contenido-seccion">
+			<h2>Skills</h2>
+			<div class="fila">
+				<!-- Technical Skill -->
+				<div class="col">
+					<h3>Technical Skills</h3>
+					<div class="skill">
+						<span>JavaScript</span>
+						<div class="barra-skill">
+							<div class="progreso">
+								<span>75%</span>
+							</div>
+						</div>
+					</div>
+					<div class="skill">
+						<span>HTML & CSS</span>
+						<div class="barra-skill">
+							<div class="progreso">
+								<span>90%</span>
+							</div>
+						</div>
+					</div>
+					<div class="skill">
+						<span>Php</span>
+						<div class="barra-skill">
+							<div class="progreso">
+								<span>80%</span>
+							</div>
+						</div>
+					</div>
+					<div class="skill">
+						<span>Laravel</span>
+						<div class="barra-skill">
+							<div class="progreso">
+								<span>85%</span>
+							</div>
+						</div>
+					</div>
+					<div class="skill">
+						<span>Java</span>
+						<div class="barra-skill">
+							<div class="progreso">
+								<span>75%</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Professional Skill -->
+				<div class="col">
+					<h3>Professional Skills</h3>
+					<div class="skill">
+						<span>Comunicación</span>
+						<div class="barra-skill">
+							<div class="progreso">
+								<span>90%</span>
+							</div>
+						</div>
+					</div>
+					<div class="skill">
+						<span>Pensamiento crítico</span>
+						<div class="barra-skill">
+							<div class="progreso">
+								<span>90%</span>
+							</div>
+						</div>
+					</div>
+					<div class="skill">
+						<span>Trabajo en equipo</span>
+						<div class="barra-skill">
+							<div class="progreso">
+								<span>80%</span>
+							</div>
+						</div>
+					</div>
+					<div class="skill">
+						<span>Gestión del tiempo</span>
+						<div class="barra-skill">
+							<div class="progreso">
+								<span>85%</span>
+							</div>
+						</div>
+					</div>
+					<div class="skill">
+						<span>Adaptabilidad</span>
+						<div class="barra-skill">
+							<div class="progreso">
+								<span>90%</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- SECCION CURRICULUM -->
+	<section id="curriculum" class="curriculum">
+		<div class="contenido-seccion">
+			<h2>Curriculum</h2>
+			<div class="fila">
+				<div class="col izquierda">
+					<h3>Educación</h3>
+					<div class="item izq">
+						<h4>Arte y Multimedia</h4>
+						<span class="casa">Institudo Lagora</span>
+						<span class="fecha">2022 - 2024</span>
+						<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod minima labore numquam suscipit obcaecati delectus, earum nemo ipsum magni autem? Quam vero iusto facilis aspernatur. Expedita accusamus consequuntur nisi. Optio.</p>
+						<div class="conectori">
+							<div class="circuloi"></div>
+						</div>
+					</div>
+					<div class="item izq">
+						<h4>Arte y Multimedia</h4>
+						<span class="casa">Institudo Lagora</span>
+						<span class="fecha">2022 - 2024</span>
+						<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod minima labore numquam suscipit obcaecati delectus, earum nemo ipsum magni autem? Quam vero iusto facilis aspernatur. Expedita accusamus consequuntur nisi. Optio.</p>
+						<div class="conectori">
+							<div class="circuloi"></div>
+						</div>
+					</div>
+					<div class="item izq">
+						<h4>Arte y Multimedia</h4>
+						<span class="casa">Institudo Lagora</span>
+						<span class="fecha">2022 - 2024</span>
+						<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod minima labore numquam suscipit obcaecati delectus, earum nemo ipsum magni autem? Quam vero iusto facilis aspernatur. Expedita accusamus consequuntur nisi. Optio.</p>
+						<div class="conectori">
+							<div class="circuloi"></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col derecha">
+					<h3 class="experiencia">Experiencia de trabajo</h3>
+					<div class="item der">
+						<h4>Front Developer</h4>
+						<span class="casa">Nombre de compañía</span>
+						<span class="fecha">2022 - 2024</span>
+						<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod minima labore numquam suscipit obcaecati delectus, earum nemo ipsum magni autem? Quam vero iusto facilis aspernatur. Expedita accusamus consequuntur nisi. Optio.</p>
+						<div class="conectord">
+							<div class="circulod"></div>
+						</div>
+					</div>
+					<div class="item der">
+						<h4>Front Developer</h4>
+						<span class="casa">Nombre de compañía</span>
+						<span class="fecha">2022 - 2024</span>
+						<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod minima labore numquam suscipit obcaecati delectus, earum nemo ipsum magni autem? Quam vero iusto facilis aspernatur. Expedita accusamus consequuntur nisi. Optio.</p>
+						<div class="conectord">
+							<div class="circulod"></div>
+						</div>
+					</div>
+					<div class="item der">
+						<h4>Front Developer</h4>
+						<span class="casa">Nombre de compañía</span>
+						<span class="fecha">2022 - 2024</span>
+						<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod minima labore numquam suscipit obcaecati delectus, earum nemo ipsum magni autem? Quam vero iusto facilis aspernatur. Expedita accusamus consequuntur nisi. Optio.</p>
+						<div class="conectord">
+							<div class="circulod"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>	
+
+	<!-- SECCION PORTFOLIO -->
+	<section id="portafolio" class="portfolio">
+		<div class="contenido-seccion">
+			<h2>PORTAFOLIO</h2>
+			<div class="galeria">
+				<div class="proyecto">
+					<img src="img/p1.jpg" alt="">
+					<div class="overlay">
+						<h3>Diseño Creativo</h3>
+						<p>Fotografía</p>
+					</div>
+				</div>
+				<div class="proyecto">
+					<img src="img/p2.jpg" alt="">
+					<div class="overlay">
+						<h3>Diseño Creativo</h3>
+						<p>Fotografía</p>
+					</div>
+				</div>
+				<div class="proyecto">
+					<img src="img/p3.jpg" alt="">
+					<div class="overlay">
+						<h3>Diseño Creativo</h3>
+						<p>Fotografía</p>
+					</div>
+				</div>
+				<div class="proyecto">
+					<img src="img/p4.jpg" alt="">
+					<div class="overlay">
+						<h3>Diseño Creativo</h3>
+						<p>Fotografía</p>
+					</div>
+				</div>
+				<div class="proyecto">
+					<img src="img/p5.jpg" alt="">
+					<div class="overlay">
+						<h3>Diseño Creativo</h3>
+						<p>Fotografía</p>
+					</div>
+				</div>
+				<div class="proyecto">
+					<img src="img/p6.jpg" alt="">
+					<div class="overlay">
+						<h3>Diseño Creativo</h3>
+						<p>Fotografía</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- SECCION CONTACTO -->
+	<section id="contacto" class="contacto">
+		<div class="contenido-seccion">
+			<h2>CONTACTO</h2>
+			<div class="fila">
+				<!-- Formulario -->
+				<div class="col">
+					<input type="text" placeholder="Tú nombre">
+					<input type="text" placeholder="Número telefónico">
+					<input type="text" placeholder="Dirección de correo">
+					<input type="text" placeholder="Asunto">
+					<textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+					<button>
+						Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+						<span class="overlay"></span>
+					</button>
+				</div>
+				<!-- Mapa -->
+				<div class="col">
+					<img src="img/ubicacion.png" alt="">
+					<div class="info">
+						<ul>
+							<li>
+								<i class="fa-solid fa-location-dot"></i>
+								Robles 223, México
+							</li>
+							<li>
+								<i class="fa-solid fa-mobile-screen"></i>
+								Llamame: +52 (442) 661 4202
+							</li>
+							<li>
+								<i class="fa-solid fa-envelope"></i>
+								Email: emiliano.meza.ochoa@icloud.com
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- FOOTER -->
+	<footer>
+		<a href="#inicio" class="arriba">
+			<i class="fa-solid fa-angles-up"></i>
+		</a>
+		<div class="redes">
+			<a href="#" class="facebook"><i class="fa-brands fa-facebook-f"></i></a>
+					<a href="#" class="twitter"><i class="fa-brands fa-x-twitter"></i></a>
+					<a href="#" class="skype"><i class="fa-brands fa-skype"></i></a>
+					<a href="#" class="linkedin"><i class="fa-brands fa-linkedin-in"></i></a>
+					<a href="#" class="whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
+		</div>
+	</footer>
+
+	<script src="script.js"></script>
+</body>
+</html>
