@@ -1,6 +1,6 @@
 let menuVisible = false;
-//Funcion que oculta o muestra el menu
-function mostrarOcultarMenu() {
+
+function showHideMenu() {
   if (menuVisible) {
     document.getElementById("nav").classList = "";
     menuVisible = false;
@@ -10,37 +10,35 @@ function mostrarOcultarMenu() {
   }
 }
 
-function seleccionador() {
-  //oculta el menu una vez que selecciono una opcion
+function selector() {
   document.getElementById("nav").classList = "";
   menuVisible = false;
 }
-//Funcion que aplica las animaciones de las habilidades
-function efectoHabilidades() {
-  var skills = document.getElementById("skills");
-  var distancia_skills =
-    window.innerHeight - skills.getBoundingClientRect().top;
-  if (distancia_skills >= 300) {
-    let habilidades = document.getElementsByClassName("progreso");
-    habilidades[0].classList.add("javascript");
-    habilidades[1].classList.add("htmlcss");
-    habilidades[2].classList.add("php");
-    habilidades[3].classList.add("laravel");
-    habilidades[4].classList.add("java");
-    habilidades[5].classList.add("comunicacion");
-    habilidades[6].classList.add("pensamiento");
-    habilidades[7].classList.add("trabajo");
-    habilidades[8].classList.add("gestion");
-    habilidades[9].classList.add("adaptabilidad");
+
+function skillsEffect() {
+  let skills = document.getElementById("skills");
+  let skillsDistance = window.innerHeight - skills.getBoundingClientRect().top;
+  if (skillsDistance >= 300) {
+    let skillsItems = document.getElementsByClassName("progreso");
+    skillsItems[0].classList.add("javascript");
+    skillsItems[1].classList.add("htmlcss");
+    skillsItems[2].classList.add("php");
+    skillsItems[3].classList.add("laravel");
+    skillsItems[4].classList.add("java");
+    skillsItems[5].classList.add("comunicacion");
+    skillsItems[6].classList.add("pensamiento");
+    skillsItems[7].classList.add("trabajo");
+    skillsItems[8].classList.add("gestion");
+    skillsItems[9].classList.add("adaptabilidad");
   }
 }
-//Detecto el scrolling para aplicar la animacion de la barra de habilidades
+
 window.onscroll = function () {
-  efectoHabilidades();
+  skillsEffect();
 };
 
 $("button").on("click", function () {
-  var number = getRandomInt(1, 40);
+  let number = getRandomInt(1, 40);
   if (number < 10) {
     number = "0" + number;
   }
@@ -58,3 +56,8 @@ $(window).resize(function () {
     "hsl(" + Math.floor((window.innerWidth / 360) * 100) + ", 70%, 70%)"
   );
 });
+
+function downloadCv() {
+  var imageUrl = "./img/certificate.png";
+  window.open(imageUrl, "_blank");
+}
