@@ -216,7 +216,7 @@ html {
   margin-bottom: 10px;
   text-shadow: 1px 1px 3px #010d23;
 }
-.sobremi button {
+.sobremi .downloadBtn {
   cursor: pointer;
   background-color: transparent;
   border: 2px transparent;
@@ -229,8 +229,9 @@ html {
   position: relative;
   z-index: 10;
   text-shadow: 1px 1px 3px #000;
+  text-decoration: none;
 }
-.sobremi button:hover {
+.sobremi .downloadBtn:hover {
   background-color: #fccb6f;
   transition: 0.4s;
 }
@@ -544,6 +545,10 @@ html {
   height: fit-content;
   margin: 10px;
   cursor: pointer;
+}
+.portafolio .galeria .proyecto .anchor {
+  text-decoration: none;
+  color: inherit;
 }
 .portfolio .galeria .proyecto img {
   width: 100%;
