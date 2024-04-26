@@ -546,10 +546,6 @@ html {
   margin: 10px;
   cursor: pointer;
 }
-.portafolio .galeria .proyecto .anchor {
-  text-decoration: none;
-  color: inherit;
-}
 .portfolio .galeria .proyecto img {
   width: 100%;
   display: block;
@@ -576,6 +572,8 @@ html {
   margin-bottom: 20px;
   transition: 0.5s;
   text-shadow: 1px 1px 2px #000;
+  text-decoration: none;
+  color: #fff;
 }
 /* .portfolio .galeria .proyecto .overlay:hover {
   opacity: 0%;
